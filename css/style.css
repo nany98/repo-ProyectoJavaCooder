@@ -15,7 +15,7 @@
 }
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 .logo {
@@ -331,9 +331,45 @@ footer {
 }
 
 /*Recursos*/
+
+.card {
+    border-radius: 0;
+    
+}
+
+.recursos {
+    font-family: "Roboto", sans-serif;
+}
+
+.card__btn--style,
+.card__title--style {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.card__btn--style:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: .1em solid #000000;
+
+}
+
+.card__btn--style:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border: .1em solid #000000;
+    text-decoration: underline;
+}
+
+
 /*Servicios*/
 
-.accordion-body {
+.accordion-body,
+.card, .justify {
     text-align: justify;
 }
 
