@@ -1,0 +1,73 @@
+/* Estilos main */
+
+main {
+    position: relative;
+}
+
+.bienvenida {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    @extend %flexBasico;
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+}
+
+h1,
+.bienvenida-intro,
+.bienvenida-slogan {
+    margin: .6rem;
+    font-size: 1.5rem;
+}
+
+main {
+
+    background-color: #e0e0e0;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Testimonios */
+
+.Testimonios {
+    position: relative;
+    @extend %flexColumn;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    background-color: $background-testimonios;
+    width: 100%;
+
+}
+
+.testimonios-label {
+    @extend %flexColumn;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    gap: 1rem;
+    min-width: 60%;
+
+}
+
+
+#testimonio {
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    resize: none
+}
+
+
+

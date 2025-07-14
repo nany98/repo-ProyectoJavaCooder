@@ -1,0 +1,37 @@
+/*Servicios*/
+
+.accordion-body,
+.card,
+.justify {
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+
+    gap: 10px 20px;
+    /* row-gap column gap */
+}
+
+.servicios__titulo {
+    background-color: $colorNegro;
+    color: $colorBlanco;
+}
+
+.container-fluid {
+    font-family: "Roboto", sans-serif;
+}
+
+.accordion {
+    --bs-accordion-btn-bg: #f0f0f0;
+    --bs-accordion-btn-color: $colorNegro;
+    --bs-accordion-active-bg: $colorNegro;
+    --bs-accordion-active-color: $colorBlanco;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.btn--h {
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+}

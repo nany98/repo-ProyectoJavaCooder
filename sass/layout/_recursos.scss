@@ -1,0 +1,35 @@
+/*Recursos*/
+
+.card {
+    border-radius: 0;
+
+}
+
+.recursos {
+    font-family: "Roboto", sans-serif;
+}
+
+.card__btn--style,
+.card__title--style {
+    background-color: $colorNegro;
+    color: $colorBlanco;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.card__btn--style:hover {
+    background-color: $colorBlanco;
+    color: $colorNegro;
+    border: .1em solid $colorNegro;
+
+}
+
+.card__btn--style:focus {
+    background-color: $colorBlanco;
+    color: $colorNegro;
+    border: .1em solid $colorNegro;
+    text-decoration: underline;
+}
+

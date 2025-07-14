@@ -1,0 +1,57 @@
+/*Nosotros*/
+
+.nosotros {
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.contenedor-nosotros {
+    position: relative;
+    @extend %flexColumn;
+    align-items: center;
+    padding: 3rem 0rem;
+    height: 100%;
+}
+
+.contenedor-nosotros-s-e {
+    @extend %flexColumn;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+
+.titulo-sobremi-estudio {
+    background-color: $colorNegro;
+    color: $colorBlanco;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: .15rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 0
+}
+
+.contenedor {
+    @extend %flexColumn;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.txt-sobremi-estudio {
+    position: relative;
+    text-align: justify;
+    margin-top: 1rem;
+}
+
+.fotomia {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}

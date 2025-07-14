@@ -1,0 +1,60 @@
+/* Estilos header */
+
+header {
+    @extend %flexColumn;
+    width: 100%;
+}
+
+header .header-container {
+    display: flex;
+    background-color: $colorNegro;
+    align-items: center;
+    color: $colorBlanco;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.arquitectura {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* header div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0
+}
+
+nav ul li {
+    padding: .3rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif; 
+
+}*/

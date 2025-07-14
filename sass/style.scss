@@ -1,0 +1,29 @@
+/*slector + propiedad + valor*/
+
+/* selector {
+    propiedad: valor;
+} */
+
+/* para seleccionar una clase se usa el punto */
+
+/*Estilos generales*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    /* outline: 1px solid red; */
+}
+
+.logo {
+    width: 7rem;
+    height: 7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
