@@ -1,3 +1,8 @@
+@use "../utilities/extends" as ext;
+@use "../utilities/variables" as var;
+@use "../utilities/mixins" as mix;
+
+
 /* Estilos header */
 
 header {
@@ -7,11 +12,11 @@ header {
 
 header .header-container {
     display: flex;
-    background-color: $colorNegro;
+    background-color: var.$colorNegro;
     align-items: center;
-    color: $colorBlanco;
-    font-size: 2rem;
-    font-family: "Roboto", sans-serif;
+    color: var.$colorBlanco;
+    @include mix.font ("Roboto", "2rem");
+
 }
 
 .arquitectura {
@@ -19,8 +24,7 @@ header .header-container {
 }
 
 .navbar-brand {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
+    @include mix.font ("Roboto", "1rem");
     margin: 0;
 }
 

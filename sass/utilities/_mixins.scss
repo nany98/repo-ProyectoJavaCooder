@@ -1,0 +1,6 @@
+/* MIXIN con argumetnos / @mixin_nombre_($argumento) {propiedad: valor/es;} */
+
+@mixin font ($family, $size) {
+    font-family: $family;
+    font-size: $size;
+}

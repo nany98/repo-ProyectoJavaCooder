@@ -1,3 +1,7 @@
+@use "../utilities/extends" as ext;
+@use "../utilities/variables" as var;
+@use "../utilities/mixins" as mix;
+
 /*Nosotros*/
 
 .nosotros {
@@ -24,8 +28,8 @@
 }
 
 .titulo-sobremi-estudio {
-    background-color: $colorNegro;
-    color: $colorBlanco;
+    background-color: var.$colorNegro;
+    color: var.$colorBlanco;
     width: 100%;
     text-align: center;
     position: relative;

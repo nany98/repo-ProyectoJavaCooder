@@ -1,3 +1,5 @@
+
+
 @media only screen and (min-width: 768px) {
 
     /*HEADER*/
@@ -52,10 +54,13 @@
     .proyecto {
         /* min-width: 20rem; */
         height: 100%;
-        @extend %flexColumn;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
         margin: 0;
     }
+
+    
 
 }
 
@@ -130,15 +135,16 @@
 
     /* NOSOTROS */
 
-    .contenedor-nosotros-s-e {
-        width: 50%;
-        height: 35rem;
-        padding: 0 1rem;
-    }
-
     .contenedor-nosotros {
         flex-direction: row;
     }
+
+    .contenedor-nosotros-s-e {
+        
+        padding: 0 1rem;
+    }
+
+
 
     .contenedor {
         flex-direction: row;

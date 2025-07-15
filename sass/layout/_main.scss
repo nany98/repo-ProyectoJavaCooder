@@ -1,3 +1,7 @@
+@use "../utilities/extends" as ext;
+@use "../utilities/variables" as var;
+@use "../utilities/mixins" as mix;
+
 /* Estilos main */
 
 main {
@@ -41,7 +45,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 20rem;
-    background-color: $background-testimonios;
+    background-color: var.$background-testimonios;
     width: 100%;
 
 }
@@ -49,8 +53,7 @@ main {
 .testimonios-label {
     @extend %flexColumn;
     align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
+    @include mix.font ("Roboto", "1.5rem");
     font-weight: 600;
     gap: 1rem;
     min-width: 60%;
@@ -63,11 +66,7 @@ main {
     height: 10rem;
     position: relative;
     border: none;
-    font-size: 1rem;
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    @include mix.font ("Roboto", "1rem");
     resize: none
 }
-
-
-

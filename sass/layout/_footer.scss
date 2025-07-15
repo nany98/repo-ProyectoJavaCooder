@@ -1,8 +1,10 @@
-/* Estilos footer */
+@use "../utilities/extends" as ext;
+@use "../utilities/variables" as var;
+@use "../utilities/mixins" as mix;
 
 footer {
-    background-color: $colorNegro;
-    color: $colorBlanco;
+    background-color: var.$colorNegro;
+    color: var.$colorBlanco;
     font-family: "Roboto", sans-serif;
     @extend %flexColumn;
     align-items: center;
@@ -20,7 +22,7 @@ footer {
 }
 
 .copyright a {
-    color: $colorBlanco;
+    color: var.$colorBlanco;
 }
 
 .social {
@@ -31,9 +33,6 @@ footer {
     letter-spacing: 0.1em;
 
 }
-
-
-
 
 .logos-sociales div {
     display: flex;

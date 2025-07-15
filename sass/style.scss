@@ -1,12 +1,19 @@
-/*slector + propiedad + valor*/
-
-/* selector {
-    propiedad: valor;
-} */
-
-/* para seleccionar una clase se usa el punto */
-
 /*Estilos generales*/
+
+@use "./utilities/extends" as ext;
+@use "./utilities/variables" as var;
+@use "./utilities/mixins" as mix;
+
+@use "./layout/contacto" as cont;
+@use "./layout/footer" as fo;
+@use "./layout/header" as head;
+@use "./layout/main" as m;
+@use "./layout/nosotros" as nos;
+@use "./layout/servicios" as serv;
+@use "./layout/recursos" as rec;
+@use "./layout/trabajos" as tra;
+
+@use "./mq/mq" as mq;
 
 * {
     margin: 0;
@@ -15,7 +22,11 @@
 }
 
 * {
-    /* outline: 1px solid red; */
+    // outline: 1px solid red;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
 }
 
 .logo {
@@ -27,3 +38,27 @@ a {
     text-decoration: none;
 }
 
+.nav-item {
+    padding: 0.5rem;
+}
+
+.nav-link:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: .2rem; // grosor del subrayado
+    text-underline-offset: .5rem; // separación del texto
+    text-decoration-color: var.$colorNegro ; // color de subrayado
+    color: var.$colorBlanco;
+    transition: all 0.3s ease;
+
+    &:focus {
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-thickness: .2rem; // grosor del subrayado
+        text-underline-offset: .5rem; // separación del texto
+        text-decoration-color: var.$colorBlanco ; // color de subrayado
+        background-color: var.$colorNegro;
+        color: var.$colorBlanco;
+        transition: all 0.3s ease;
+    }
+}

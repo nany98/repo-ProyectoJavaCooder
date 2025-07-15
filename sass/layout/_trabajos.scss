@@ -1,4 +1,5 @@
-/*Trabajos*/
+@use "../utilities/extends" as ext;
+@use "../utilities/variables" as var;/*Trabajos*/
 
 .container-trabajos {
     @extend %flexColumn;
