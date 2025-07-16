@@ -80,6 +80,7 @@ header .header-container {
 
 .arquitectura {
   margin-bottom: 0;
+  font-size: 2rem;
 }
 
 .navbar-brand {
@@ -142,7 +143,7 @@ h1,
 .bienvenida-intro,
 .bienvenida-slogan {
   margin: 0.6rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 main {
@@ -366,13 +367,13 @@ main {
   }
   /*MAIN*/
   .bienvenida {
-    font-size: 2rem;
     height: 15rem;
   }
   h1,
   .bienvenida-intro,
   .bienvenida-slogan {
     margin: 0.5rem;
+    font-size: 2rem;
   }
   /*TESTIMONIOS*/
   /*NOSOTROS*/
@@ -487,24 +488,44 @@ a {
   padding: 0.5rem;
 }
 
-.nav-link:hover {
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-thickness: 0.2rem;
-  text-underline-offset: 0.5rem;
-  text-decoration-color: #000000;
-  color: #ffffff;
-  transition: all 0.3s ease;
+.nav-link {
+  position: relative;
+  cursor: pointer;
+  width: max-content;
 }
-.nav-link:hover:focus {
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-thickness: 0.2rem;
-  text-underline-offset: 0.5rem;
-  text-decoration-color: #ffffff;
-  background-color: #000000;
-  color: #ffffff;
-  transition: all 0.3s ease;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.15rem;
+  background: #000000;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.1rem;
+  transition: all 0.3s ease-in-out;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link:hover {
+  scale: 1.15;
+}
+.nav-link:active::after {
+  width: 0;
+  transition: width 0.1s ease-in-out;
+}
+
+.bienvenida {
+  animation: animationBinevenida 2s linear;
+}
+
+@keyframes animationBinevenida {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

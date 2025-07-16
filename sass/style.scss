@@ -40,25 +40,52 @@ a {
 
 .nav-item {
     padding: 0.5rem;
+
 }
 
-.nav-link:hover {
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-decoration-thickness: .2rem; // grosor del subrayado
-    text-underline-offset: .5rem; // separación del texto
-    text-decoration-color: var.$colorNegro ; // color de subrayado
-    color: var.$colorBlanco;
-    transition: all 0.3s ease;
+.nav-link {
+    position: relative;
+    cursor: pointer;
+    width: max-content;
 
-    &:focus {
-        text-transform: uppercase;
-        text-decoration: underline;
-        text-decoration-thickness: .2rem; // grosor del subrayado
-        text-underline-offset: .5rem; // separación del texto
-        text-decoration-color: var.$colorBlanco ; // color de subrayado
-        background-color: var.$colorNegro;
-        color: var.$colorBlanco;
-        transition: all 0.3s ease;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0.15rem;
+        background: var.$colorNegro;
+        bottom: 0;
+        left: 0;
+        border-radius: .1rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+    &:hover {
+        scale: 1.15;
+
+    }
+
+    &:active::after {
+        width: 0;
+
+        transition: width 0.1s ease-in-out;
+    }
+}
+
+.bienvenida {
+    animation: animationBinevenida 2s linear;
+}
+
+@keyframes animationBinevenida {
+    from {
+        scale: 0;
+    }
+
+    to {
+        scale: 1;
     }
 }

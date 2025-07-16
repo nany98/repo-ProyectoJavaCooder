@@ -1,5 +1,3 @@
-
-
 @media only screen and (min-width: 768px) {
 
     /*HEADER*/
@@ -24,7 +22,7 @@
     /*MAIN*/
 
     .bienvenida {
-        font-size: 2rem;
+
         height: 15rem;
     }
 
@@ -32,6 +30,7 @@
     .bienvenida-intro,
     .bienvenida-slogan {
         margin: .5rem;
+        font-size: 2rem;
     }
 
     /*TESTIMONIOS*/
@@ -60,7 +59,7 @@
         margin: 0;
     }
 
-    
+
 
 }
 
@@ -140,7 +139,7 @@
     }
 
     .contenedor-nosotros-s-e {
-        
+
         padding: 0 1rem;
     }
 
