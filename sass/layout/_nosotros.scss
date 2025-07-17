@@ -23,8 +23,7 @@
     @extend %flexColumn;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    height: 100%;
+    @include mix.dimension(80%, 100%);
 }
 
 .titulo-sobremi-estudio {
@@ -44,8 +43,7 @@
 .contenedor {
     @extend %flexColumn;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    @include mix.dimension(100%, 100%);
 }
 
 .txt-sobremi-estudio {
@@ -55,7 +53,6 @@
 }
 
 .fotomia {
-    width: 100%;
-    height: auto;
+    @include mix.dimension(100%, auto);
     padding-top: 1rem;
 }

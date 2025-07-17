@@ -4,3 +4,20 @@
     font-family: $family;
     font-size: $size;
 }
+
+@mixin fontStyle ($family, $weight, $style) {
+    font-family: $family;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+@mixin btnRecursos ($background,$color,$border){
+    background-color: $background;
+    color: $color;
+    border: $border;
+}
+
+@mixin dimension ($width, $height) {
+    width: $width;
+    height: $height;
+}

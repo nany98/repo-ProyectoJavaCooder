@@ -33,8 +33,7 @@ main {
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-    width: 10rem;
-    height: 10rem;
+    @include mix.dimension(10rem, 10rem);
 }
 
 /* Testimonios */
@@ -44,9 +43,8 @@ main {
     @extend %flexColumn;
     align-items: center;
     justify-content: center;
-    height: 20rem;
     background-color: var.$background-testimonios;
-    width: 100%;
+    @include mix.dimension(100%, 20rem);
 
 }
 

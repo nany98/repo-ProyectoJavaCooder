@@ -1,5 +1,6 @@
 @use "../utilities/extends" as ext;
 @use "../utilities/variables" as var;
+@use "../utilities/mixins" as mix;
 
 /*Recursos*/
 
@@ -14,24 +15,17 @@
 
 .card__btn--style,
 .card__title--style {
-    background-color: var.$colorNegro;
-    color: var.$colorBlanco;
-    border: none;
+    @include mix.btnRecursos(var.$colorNegro, var.$colorBlanco, "none");
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
 .card__btn--style:hover {
-    background-color: var.$colorBlanco;
-    color: var.$colorNegro;
-    border: .1em solid var.$colorNegro;
-
+    @include mix.btnRecursos(var.$colorBlanco, var.$colorNegro, .1em solid var.$colorNegro);
 }
 
 .card__btn--style:focus {
-    background-color: var.$colorBlanco;
-    color: var.$colorNegro;
-    border: .1em solid var.$colorNegro;
+    @include mix.btnRecursos(var.$colorBlanco, var.$colorNegro, .1em solid var.$colorNegro);
     text-decoration: underline;
 }

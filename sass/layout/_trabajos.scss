@@ -1,5 +1,6 @@
 @use "../utilities/extends" as ext;
 @use "../utilities/variables" as var;/*Trabajos*/
+@use "../utilities/mixins" as mix;
 
 .container-trabajos {
     @extend %flexColumn;
@@ -24,22 +25,16 @@
     width: 100%;
 }
 
-.proeycto-titulos {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+.proeycto-titulos{
+    @include mix.fontStyle ("Ubuntu", 700, normal);
     text-transform: uppercase;
 }
 
 .proyecto-parrafo {
-    font-family: "Nanum Gothic", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    @include mix.fontStyle ("Nanum Gothic", 500, normal);
     margin-bottom: 0;
 }
 
 .trabajos-negrita {
-    font-family: "Nanum Gothic", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    @include mix.fontStyle ("Nanum Gothic", 700, normal);
 }

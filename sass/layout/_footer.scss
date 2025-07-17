@@ -11,7 +11,6 @@ footer {
     justify-content: space-around;
     width: 100%;
     position: relative;
-
 }
 
 .copyright {
@@ -31,7 +30,6 @@ footer {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-
 }
 
 .logos-sociales div {
@@ -41,12 +39,8 @@ footer {
 .logos-sociales a {
     display: flex;
     margin: .5rem;
-
 }
 
-
-
 .logos-social {
-    height: 2rem;
-    width: 2rem;
+    @include mix.dimension(2rem, 2rem);
 }
