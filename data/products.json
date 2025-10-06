@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Cemento 50kg",
+    "desc": "Cemento Portland, bolsa 50kg",
+    "price": 4200,
+    "category": "Materiales",
+    "img": "assets/cemento.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ladrillo Hueco",
+    "desc": "Ladrillo hueco 18x18x33 cm",
+    "price": 120,
+    "category": "Materiales",
+    "img": "assets/ladrillo.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Arena 1m3",
+    "desc": "Arena fina para mezclas",
+    "price": 8000,
+    "category": "Materiales",
+    "img": "assets/arena.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Yeso 25kg",
+    "desc": "Yeso para enlucidos",
+    "price": 2600,
+    "category": "Materiales",
+    "img": "assets/yeso.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Madera Pino 2x4",
+    "desc": "Listón pino estructural 2x4m",
+    "price": 3500,
+    "category": "Maderas",
+    "img": "assets/madera.jpg"
+  }
+]

@@ -1,45 +1,28 @@
-# Simulador de Presupuestos & CS Arquitectura
+# ProyectoFinal - Simulador Ecommerce de Materiales
 
-<h1 align="center">Hi 👋, I'm Santiago Castaño</h1>
-<h3 align="center">A passionate frontend developer from Argentina</h3>
+Proyecto final entregable para la cursada de JavaScript.
 
-- 🔭 Actualmente trabajando en **CSarquitectura** y **Simulador de Presupuestos**  
+## Descripción
+Simulador tipo ecommerce para materiales de construcción. Incluye catálogo cargado desde un JSON (simula datos remotos), carrito con persistencia en localStorage, y checkout simulado.
 
-- 💬 Preguntas sobre **Desarrollo Web**
+## Instrucciones
+- Abrir `index.html` en un navegador moderno.
+- Agregar productos al carrito, ver el carrito y finalizar compra.
+- Se usan SweetAlert2 para notificaciones y Bootstrap para la interfaz.
 
-- 📫 Contacto: **rsantiagocm98@gmail.com**
+## Estructura
+```
+ProyectoFinal_Castano/
+├─ index.html
+├─ css/styles.css
+├─ js/app.js
+├─ data/products.json
+├─ assets/ (imágenes de productos)
+└─ README.md
+```
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/robertocastanio" target="blank">LinkedIn</a>
-<a href="https://instagram.com/nnanyy_" target="blank">Instagram</a>
-<a href="https://www.behance.net/santiagocastano" target="blank">Behance</a>
-</p>
+## Tecnologías
+HTML, CSS, JavaScript (ES6), Bootstrap 5, SweetAlert2.
 
-## 🚀 Funcionalidades del Simulador de Presupuestos
-
-- Crear presupuestos con un **nombre** y un **monto**.
-- Guardar presupuestos en **localStorage**.
-- Mostrar la lista de presupuestos en el DOM.
-- Interactividad mediante formularios y eventos.
-- Estilos básicos en **CSS**.
-
-## 📂 Estructura del proyecto
-
-Entregable2_Castano/
-│── index.html
-│── README.md
-│
-├── css/
-│ └── styles.css
-├── js/
-│ └── script.js
-└── data/
-└── (reservado para futuros JSON)
-
-markdown
-Copiar código
-
-## 👤 Autor
-
-**Santiago Castaño**
+## Autor
+Santiago Castaño

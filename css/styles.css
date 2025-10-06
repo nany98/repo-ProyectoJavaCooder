@@ -1,43 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
 
-h1, h2 {
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-input, button {
-    padding: 8px;
-    font-size: 14px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-#resultado, #historial {
-    margin-top: 20px;
-    padding: 10px;
-    background: white;
-    border-radius: 8px;
-}
+body { background:#f8f9fa; }
+.card-img-top { height:140px; object-fit:cover; }
+#catalog { min-height:200px; }
